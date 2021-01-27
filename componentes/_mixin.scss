@@ -1,0 +1,63 @@
+@mixin general {
+    box-sizing: border-box;
+}
+@mixin body-margin {
+    margin: 10px 0 0 0;
+  }
+
+ @mixin h1-selector {
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: $color1;
+    font-family: "Lato";
+  }
+
+  @mixin strips-section{
+        height: $altura1;
+        width: $ancho1;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        cursor: pointer;
+  }
+  @mixin strip-containers{
+    position: relative;
+    width: 19.9vw;
+    margin: 0.1vw;
+    height: $altura1;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin strip-main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width:$ancho2;
+    text-align: center;
+  }
+@mixin strips-before{
+    content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 20vw;
+      height: $altura1;
+      background:$color1;
+      opacity: 0.05;
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+      transform: skew(30deg) scaleY(1) translate(0, 0);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      overflow: hidden;
+
+}
