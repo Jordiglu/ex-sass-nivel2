@@ -61,3 +61,9 @@
       overflow: hidden;
 
 }
+@mixin hover-before{
+  -webkit-transform: skew(0deg) scaleX(2) translate(0, 0);
+  transform: skew(0deg) scaleX(2) translate(0, 0);
+  opacity: 0.2;
+}
+
