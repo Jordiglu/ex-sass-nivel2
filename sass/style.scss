@@ -12,6 +12,7 @@
  
  body{
    @include body-margin;
+   overflow: hidden;
  }
 
 h1{
